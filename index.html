@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brayan Ruelas — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">BR<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot pulse"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">Brayan<br/><span class="outline-text">Ruelas</span></h1>
+      <div class="hero-roles">
+        <span class="role-item active" data-index="0">Backend Developer</span>
+        <span class="role-item" data-index="1">Cybersecurity Analyst</span>
+        <span class="role-item" data-index="2">Data Analyst</span>
+        <span class="role-item" data-index="3">Information Systems</span>
+      </div>
+      <p class="hero-bio">
+        Information Systems graduate passionate about building secure, 
+        data-driven systems and solving complex technical problems.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <div class="hex-grid">
+        <div class="hex h1"><span>{ }</span></div>
+        <div class="hex h2"><span>⚡</span></div>
+        <div class="hex h3"><span>🔐</span></div>
+        <div class="hex h4"><span>📊</span></div>
+        <div class="hex h5"><span>⚙️</span></div>
+        <div class="hex h6"><span>🛡️</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Who I Am</h2>
+          <p>
+            I'm Brayan, an Information Systems graduate with a drive for 
+            working behind the scenes — building robust backends, locking 
+            down systems, and extracting meaning from data.
+          </p>
+          <p>
+            Whether it's designing secure APIs, analyzing datasets for insights, 
+            or hardening infrastructure against threats, I bring technical 
+            precision and a problem-solving mindset to every challenge.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-num" data-target="10">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="3">0</div>
+              <div class="stat-label">Focus Areas</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="4">0</div>
+              <div class="stat-label">Years Studying</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="card-inner">
+            <div class="card-avatar">BR</div>
+            <div class="card-info">
+              <div class="card-name">Brayan Ruelas</div>
+              <div class="card-title">Information Systems</div>
+              <div class="card-tags">
+                <span>Backend</span>
+                <span>Security</span>
+                <span>Data</span>
+              </div>
+            </div>
+            <div class="card-social">
+              <a href="https://github.com/" target="_blank" class="social-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" class="social-link" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="mailto:your@email.com" class="social-link" title="Email">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2>Technical Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <span class="skill-icon">⚙️</span>
+            <span>Backend Development</span>
+          </div>
+          <div class="skill-tags">
+            <span>Python</span><span>Node.js</span><span>Java</span>
+            <span>REST APIs</span><span>SQL</span><span>PostgreSQL</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <span class="skill-icon">🔐</span>
+            <span>Cybersecurity</span>
+          </div>
+          <div class="skill-tags">
+            <span>Network Security</span><span>Linux</span><span>Wireshark</span>
+            <span>Vulnerability Analysis</span><span>Firewalls</span><span>SIEM</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <span class="skill-icon">📊</span>
+            <span>Data Analytics</span>
+          </div>
+          <div class="skill-tags">
+            <span>Python</span><span>Pandas</span><span>NumPy</span>
+            <span>Tableau</span><span>Power BI</span><span>Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <span class="skill-icon">🛠️</span>
+            <span>Tools & Platforms</span>
+          </div>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Docker</span>
+            <span>VS Code</span><span>AWS (basics)</span><span>Bash</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <div class="projects-header">
+        <h2>My Work</h2>
+        <button class="btn btn-primary" id="addProjectBtn">+ Add Project</button>
+      </div>
+
+      <!-- Add Project Modal -->
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <button class="modal-close" id="modalClose">✕</button>
+          <h3>Add New Project</h3>
+          <div class="form-group">
+            <label>Project Title *</label>
+            <input type="text" id="projTitle" placeholder="e.g. Secure API Gateway" />
+          </div>
+          <div class="form-group">
+            <label>Category</label>
+            <select id="projCategory">
+              <option value="Backend">Backend Development</option>
+              <option value="Security">Cybersecurity</option>
+              <option value="Data">Data Analytics</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Description *</label>
+            <textarea id="projDesc" rows="3" placeholder="What does this project do?"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Technologies Used</label>
+            <input type="text" id="projTech" placeholder="Python, Flask, PostgreSQL (comma-separated)" />
+          </div>
+          <div class="form-group">
+            <label>GitHub URL</label>
+            <input type="url" id="projGithub" placeholder="https://github.com/..." />
+          </div>
+          <div class="form-group">
+            <label>Live Demo URL</label>
+            <input type="url" id="projDemo" placeholder="https://..." />
+          </div>
+          <div class="modal-actions">
+            <button class="btn btn-ghost" id="cancelBtn">Cancel</button>
+            <button class="btn btn-primary" id="saveProjectBtn">Save Project</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Sample projects -->
+        <div class="project-card" data-category="Backend">
+          <div class="project-category">Backend</div>
+          <h3 class="project-title">Secure REST API</h3>
+          <p class="project-desc">A fully authenticated REST API with JWT tokens, rate limiting, and input validation built with Node.js and Express.</p>
+          <div class="project-tech">
+            <span>Node.js</span><span>Express</span><span>JWT</span><span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+          </div>
+          <button class="delete-btn" title="Remove project">✕</button>
+        </div>
+
+        <div class="project-card" data-category="Security">
+          <div class="project-category">Security</div>
+          <h3 class="project-title">Network Vulnerability Scanner</h3>
+          <p class="project-desc">Python-based tool to scan local networks, identify open ports, detect potential vulnerabilities and generate reports.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Nmap</span><span>Socket</span><span>Linux</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+          </div>
+          <button class="delete-btn" title="Remove project">✕</button>
+        </div>
+
+        <div class="project-card" data-category="Data">
+          <div class="project-category">Data</div>
+          <h3 class="project-title">Sales Dashboard</h3>
+          <p class="project-desc">Interactive data dashboard analyzing sales trends with visualizations, KPIs, and automated reporting using Python and Tableau.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>Tableau</span><span>SQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+          </div>
+          <button class="delete-btn" title="Remove project">✕</button>
+        </div>
+      </div>
+
+      <p class="projects-hint" id="emptyHint" style="display:none;">No projects yet. Click <strong>+ Add Project</strong> to get started!</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">04 / Contact</div>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <h2>Let's Work Together</h2>
+          <p>I'm actively looking for opportunities in backend development, cybersecurity, and data analytics. If you have a role or project in mind, I'd love to hear about it.</p>
+          <div class="contact-methods">
+            <a href="mailto:brayan@email.com" class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <span>brayan@email.com</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-item">
+              <span class="contact-icon">💼</span>
+              <span>linkedin.com/in/brayanruelas</span>
+            </a>
+            <a href="https://github.com/" target="_blank" class="contact-item">
+              <span class="contact-icon">🐙</span>
+              <span>github.com/brayanruelas</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Tell me about your project or opportunity..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+          <p class="form-note">Tip: Link this form to <a href="https://formspree.io" target="_blank">Formspree</a> or <a href="https://netlify.com" target="_blank">Netlify Forms</a> for real submissions.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">BR<span class="accent">.</span></div>
+        <p>© 2025 Brayan Ruelas. Built with HTML, CSS & JS.</p>
+        <div class="footer-links">
+          <a href="#home">Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
